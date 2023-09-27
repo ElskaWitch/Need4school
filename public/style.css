@@ -1,0 +1,118 @@
+.titre{
+    text-align: center;
+}
+
+   /* Style pour le formulaire */
+    .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    
+    /* Style pour les champs de formulaire */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    /* Style pour les labels des champs */
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    /* Style pour les champs de texte et les zones de texte */
+    .form-control {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    
+    /* Style pour le bouton envoyer */
+    .btn-primary {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+        background-color: #8c8b8b;
+    }
+    
+    /* Style pour les messages d'erreur de validation */
+    .has-error .form-control {
+        border-color: #d9534f;
+    }
+    
+    .has-error .help-block {
+        color: #d9534f;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+
+/* Styles pour la navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6600; /* Changez la couleur au survol */
+}    
+
+/* Style pour centrer la liste de liens */
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.link-list a:hover {
+    color: #ff6600; /* Couleur au survol */
+}

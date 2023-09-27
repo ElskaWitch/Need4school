@@ -1,0 +1,10 @@
+{# templates/horse/details.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails du cheval - {{ horse.name }}{% endblock %}
+
+{% block body %}
+    <h1>{{ horse.name }}</h1>
+    <p>number : {{ horse.number }}</p>
+{% endblock %}

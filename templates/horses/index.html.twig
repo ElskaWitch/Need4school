@@ -1,0 +1,50 @@
+{# templates/horse/details.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HorsesController!{% endblock %}
+
+{% block body %}
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_home') }}">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_horses') }}">Chevaux</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ path('app_users') }}">Connexion</a>
+        </li>
+    </ul>
+</nav>
+
+{{ form_start(form, {'attr': {'class': 'form-container'}}) }}
+<div class="form-group">
+    {{ form_label(form.name, 'Nom', {'label_attr': {'class': 'control-label'}}) }}
+    {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(form.number, 'Numéro', {'label_attr': {'class': 'control-label'}}) }}
+    {{ form_widget(form.number, {'attr': {'class': 'form-control'}}) }}
+</div>
+
+<div class="form-group">
+    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+</div>
+{{ form_end(form, {'render_rest': false}) }}
+
+<h2 class="titre">Liste des chevaux</h2>
+<div class="link-container">
+    <ul class="link-list">
+        {% for horse in allHorses %}
+        <li>
+            <a href="{{ path('horse_details', {'id': horse.id}) }}">{{ horse.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
+

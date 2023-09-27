@@ -3,3 +3,9 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+horses_details:
+    path: '/horse/{id}'
+    controller: 'App\Controller\HorseController::show'
+    requirements: 
+        id: '\d+'
